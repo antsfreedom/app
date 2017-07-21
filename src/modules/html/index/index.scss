@@ -1,0 +1,48 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.content{
+		margin:0 $padding;
+	.advisory{
+		position:relative;
+		display: block;
+		text-decoration: none;
+		margin-top: 26px;
+		padding-left:13px;
+		padding-bottom: 26px;
+		border-bottom:1px solid #ccc;
+		.icon1{
+			font-size: $font-size-icon;
+			color:$brand-yellow;
+		}
+		.icon2{
+			font-size: $font-size-icon;
+			color:$brand-green
+		}
+		.icon3{
+			font-size: $font-size-icon;
+			color:$brand-red
+		}
+		.icon4{
+			font-size: $font-size-icon;
+			color:$brand-blue
+		}
+
+		.service{
+			padding-left:40px;
+			p{
+				margin:0;
+				font-size: $font-size-h4;
+				font-weight: 550;
+			}
+			span{
+				font-size:$padding; 
+			}
+		}
+		b{
+			position:absolute;
+			right:0;
+			top:20px;
+		}
+	}
+}

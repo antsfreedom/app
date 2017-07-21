@@ -1,0 +1,130 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+body{
+	background:#f7f7f7;
+}
+
+.search{
+	position:relative;
+	height:41px;
+	margin:9px $padding;
+	span{
+		position:absolute;
+		top:10px;
+		left:10px;
+		font-size: 18px;
+	}
+		input{
+			width:100%;
+			line-height: 41px;
+			text-indent: 40px;
+			font-size: 15px;
+			outline: none;
+			border:0
+		}
+}
+
+.list{
+	// float:left;
+	width:20%;
+	ul{
+		li{
+			height: 45px;
+			line-height: 45px;
+			text-align: center;
+			border-top:1px solid #ddd;
+		}	
+	}
+}
+
+.content{
+	// float:right;
+ 	width:80%;
+	background:#fff;
+	.list-head{
+		margin:8px auto auto 10px;
+		li{
+			// margin-right:3px;
+			display: inline-block;
+			width: 84px;
+ 			height:30px;
+ 			line-height: 30px;
+			text-align: center;
+ 			border:1px solid #ddd;
+		}
+		li:hover{
+			background:#ea7e15;
+			color:#fff;
+		}
+	}
+	.lawyer-list{
+		margin:9px 11px auto 11px;
+		.lawyer-mes{
+			border:1px solid #eee;
+			margin-bottom: 10px;
+			border-radius:5px;
+			.pic{
+				float:left;
+				width:61px;
+		 		height:61px;
+		 		margin:9px 19px auto 9px;
+		 		img{
+		 			width:100%;
+		 			height: auto;
+		 			border-radius:50%;
+		 		}
+			}
+			.mes{
+				margin:9px auto auto 19px;
+				span{
+					display: block;
+					font-size: 16px;
+				}
+				a{
+					display: block;
+					font-size: 13px;
+					color:#939393
+				}
+			}
+			p{
+				padding-left:9px;
+				font-size: 13px;
+				span{
+					display: block;
+					display: inline-block;
+					margin-left:15px;
+					width:55px;
+					height: 19px;
+					line-height: 19px;
+					text-align: center;
+					font-size: 12px;
+					color:#ea7e15;
+					border:1px solid #ea7e15;
+				}
+			}
+			.chatbox{
+				height:40px;
+				text-indent: 9px;
+				line-height: 40px;
+				font-size: 13px;
+				border-top:1px solid #eee;
+				a{
+					display: block;
+					float:right;
+					margin:5px 5px auto auto;
+					text-decoration: none;
+					div{
+						background:#ea7e15;
+						width:90px;
+						height: 31px;
+						line-height: 31px;
+						color:#fff;
+						border-radius:3px;
+					}
+				}
+			}
+		}
+	}
+}
+

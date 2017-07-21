@@ -1,0 +1,25 @@
+@import "../../css/variables.scss";
+@import "../../css/mixins.scss";
+
+.swiper-container {
+  width: 100vw;
+  height: 100vh;
+  .swiper-slide{
+  	img{
+  		width:100%;
+  		height: 100%;
+  	}
+  }
+  .swiper-slide:nth-child(3){
+  	position:relative;
+  }
+
+  a{
+  	position: absolute;
+  	left:40vw;
+  	bottom:36px;
+  	display: block;
+  	width:110px;
+  	height: 37px;
+  }
+} 

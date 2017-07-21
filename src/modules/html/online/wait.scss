@@ -1,0 +1,58 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+body{
+	 background:$brand;
+ }
+
+.circle{
+	width:277px;
+	height:279px;
+	margin:20px auto;
+	background:url(../../images/circle.png);
+	background-size:100%;
+	overflow:hidden;
+	.count{
+		// margin:20px auto;
+		margin-left:100px;
+		margin-top: 88px;
+		color:$white;
+		p{
+			margin:0;
+			font-size: 12px;
+		}	
+		h2{
+			margin:0;
+			font-size: 70px;
+		}
+	}
+}
+
+.wait-time{
+	color:$white;
+	font-size:16px;
+	p{
+		float:left;
+		margin:0;
+		width:50%;
+		height: 43px;
+		line-height: 43px;
+		text-align: center;
+	}
+}
+
+.wait-out{
+	display:block;
+	text-decoration: none;
+	color:$white;
+	div{
+		margin:70px auto;
+		width:241px;
+		height:46px;
+		font-size: 16px;
+		border:1px solid $white;
+		line-height: 46px;
+		text-align:center;
+		border-radius:10px;
+	}
+}

@@ -1,0 +1,107 @@
+@import "../../css/variables.scss";
+@import "../../css/mixins.scss";
+body{
+	background:#f8f8f8;
+}
+.mid{
+	border-top:1px solid #3152c2;
+	height:103px;
+	background:$brand;
+	.search{
+		position: relative;
+		margin:24px $padding auto $padding;
+		input{
+			width:100%;
+			line-height:44px;
+			border-radius:5px;
+			text-indent: $padding;
+			outline: none;
+			border:none;
+		}
+		b{
+			position:absolute;
+			top:$padding;
+			right:$padding;
+		}
+	}
+	span{
+		display: block;
+		padding:9px 20px;
+		color:$white;
+		font-size:13px;
+		a{
+			color:$white;
+			padding-left:20px;
+			font-size:13px;
+		}
+	}
+}
+
+.content{
+	ul{
+		margin-left:$padding;
+		margin-top: 19px;
+		li{
+			float:left;
+			margin-right: 8px;
+			margin-bottom: 21px;
+			width: 106px;
+			height: 96px;
+			background:#fff;
+			border:1px solid #eee;
+			a{
+				display: block;
+				text-decoration: none;
+				span{
+					display: block;
+					width:50px;
+					height: 50px;
+					border-radius:50%;
+					font-size: 28px;
+					text-align: center;
+					line-height: 50px;
+					color:#fff;
+					margin:9px 27px auto 27px;
+				}
+				span.bg1{
+					background:$bg-blue;
+				}
+				span.bg2{
+					background:$bg-pink;
+				}
+				span.bg3{
+					background:$bg-yellow;
+				}
+				span.bg4{
+					background:$bg-green;
+				}
+				span.bg5{
+					background:$light-blue;
+				}
+
+				span.bg6{
+					background:$bg-orange;
+				}
+				span.bg7{
+					background:$bg-purple;
+				}
+				span.bg8{
+					background:$light-orange;
+				}
+				span.bg9{
+					background:$light-green;
+				}
+				span.bg10{
+					background:$bg-yellow;
+				}
+				
+				b{
+					display: block;
+					text-align: center;
+					padding-top:10px;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}

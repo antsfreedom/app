@@ -1,0 +1,106 @@
+@import "../../css/variables.scss";
+@import "../../css/mixins.scss";
+
+div.bg{
+	width:51px;
+	height:50px;
+	font-size:28px;
+	color:#fff;
+	line-height:50px;
+	text-align:center;
+	border-radius:50%;
+	background:$bg-pink;
+	margin:16px auto
+}
+h3{
+	text-align:center;
+	margin:17px auto
+}
+.penal{
+	text-indent:50px;
+	padding:0 23px 20px 20px
+}
+
+.num{
+	float:left;
+	width:50%;
+	height: 40px;
+	text-align:center;
+	line-height:40px;	
+	border:1px solid #eee;
+	span{
+		color:#e53f1f
+	}
+}
+
+.hour{
+	height: 40px;
+	text-align:center;
+	line-height:40px;	
+	border:1px solid #eee;
+	span{
+		color:#e53f1f
+	}
+}
+
+.gap{
+	margin:0;
+	height:10px;
+	background:#eee
+}
+
+.lawer-more{
+	height:41px;
+	line-height:41px;
+	color:#e53f1f;
+	border-bottom:1px solid #eee;
+	span{
+		padding-left:$padding
+	}
+	a{
+		float:right;
+		padding-right:$padding;
+		color:#e53f1f;
+		text-decoration: none;
+	}
+}
+
+.lawer-team{
+	a{
+		display: block;
+		text-decoration: none;
+		margin:15px $padding auto $padding;
+		padding-bottom:16px;
+		border-bottom:1px solid #eee;
+		.pic{
+			float:left;
+			margin-right:20px;
+			width:60px;
+			height: 60px;
+			background:red;
+			img{
+				width:100%;
+			}
+		}
+		.mess{
+			span{
+				display: block;
+			}
+		}
+	}
+	a:nth-child(3){
+		padding-bottom:0;
+		border:none;
+	}
+	.wait{
+		div{
+			height:46px;
+			line-height: 46px;
+			border-radius:5px;
+			text-align: center;
+			font-size: 16px;
+			color:$white;
+			background:$brand
+		}		
+	}
+}
