@@ -1,0 +1,47 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.issue{
+	margin:19px $padding 19px $padding;
+	p{
+		text-indent: 27px;
+	}
+	span{
+		color:#ccc;
+	}
+}
+
+.reply{
+	margin:9px $padding;
+	border-bottom:1px solid #ccc;
+
+	.pic{
+		float:left;
+		margin-right: 10px;
+		width:41px;
+		height:43px;
+		img{
+			width:100%;
+			border-radius: 50%;
+		}
+	}
+	.lawyer-reply{
+		margin-left:41px;
+		h3{
+			margin:0;
+			margin-left:10px;
+			span{
+				color:#ccc;
+				float:right;
+			}
+		}
+		div{
+			width:80px;
+			height:24px;
+			line-height: 24px;
+			text-align: center;
+			background:#5cc79e;
+			border-radius:5px;
+		}
+	}
+}

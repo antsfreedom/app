@@ -112,16 +112,15 @@ body{
 				a{
 					display: block;
 					float:right;
-					margin:5px 5px auto auto;
+					width:90px;
+					height: 31px;
+					line-height: 31px;
+					text-align: center;
+					color:#fff;
+					border-radius:3px;
+					background:#ea7e15;
 					text-decoration: none;
-					div{
-						background:#ea7e15;
-						width:90px;
-						height: 31px;
-						line-height: 31px;
-						color:#fff;
-						border-radius:3px;
-					}
+					margin:5px 5px auto auto;
 				}
 			}
 		}

@@ -1,0 +1,116 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+
+.personal{
+		margin:$padding auto auto $padding;
+	div{
+		float:left;
+		margin-right:19px;
+		width:80px;
+		height: 80px;
+		img{
+			width:100%;
+			border-radius: 50%;
+		}
+	}
+	ul{
+		float:left;
+		li{
+			margin-bottom: 10px;
+			font-size: 13px;
+			color:#c6c6c6;
+			a{
+				display: block;
+				display: inline-block;
+				margin-left: 10px;
+				width:24px;
+				height: 13px;
+				font-size: 10px;
+				text-align: center;
+				line-height: 13px;
+				border-radius:5px;
+				background: #ef4630;
+				color:#fff;
+			}
+			span{
+				display: block;
+				display: inline-block;
+				margin-left: 7px;
+				width:55px;
+				height: 18px;
+				line-height: 18px;
+				text-align: center;
+				color:#ea7e15;
+				border:1px solid #ea7e15;
+			}
+		}
+		li:nth-child(1){
+			font-size: 18px;
+			color:#000;
+		}
+	}
+}
+
+.empty{
+	height:10px;
+	background:#f7f7f7;
+}
+
+.data{
+	height:55px;
+	margin-bottom: 9px;
+	ul{
+		margin: 7px;
+		li{
+			float:left;
+			padding:10px 30px;
+			border-right:1px solid #f7f7f7;
+			a{
+				display: block;
+				text-align:center;
+				padding-top:$padding;
+				color:#e53f1f;
+			}
+		}
+		li:nth-child(3){
+			border:none;
+		}
+	}
+}
+
+.lawyer-point{
+	h2{
+	text-align:center;
+		color:#f0a672;
+		font-size: 16px;
+		span{
+			 padding-right:9px;
+		}
+	}
+	p{
+		margin:12px 26px;
+	}
+	div{
+		text-align:center;
+		margin-bottom: 11px;
+	}
+}
+
+.bottom{
+	height:109px;
+	background:#f7f7f7;
+	overflow:hidden;
+	a{
+		margin:46px $padding auto $padding;
+		display: block;
+		height: 43px;
+		line-height: 43px;
+		text-align: center;
+		background:$brand;
+		color:#fff;
+		font-size: 16px;
+		text-decoration: none;
+		border-radius:5px;
+	}
+}

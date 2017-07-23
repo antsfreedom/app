@@ -1,0 +1,25 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+body{
+  background:#f8f8f8
+}
+
+.content{
+	ul{
+		li{
+			margin:9px 0;
+			padding:0 $padding;
+			height: 44px;
+			line-height: 44px;
+			background:$white;
+			a{
+				font-size: 16px;
+				text-decoration: none;
+				span{
+					float:right;
+				}
+			}
+		}
+	}
+}

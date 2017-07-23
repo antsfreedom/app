@@ -3,39 +3,6 @@
 body{
 	background:#f8f8f8;
 }
-.mid{
-	border-top:1px solid #3152c2;
-	height:103px;
-	background:$brand;
-	.search{
-		position: relative;
-		margin:24px $padding auto $padding;
-		input{
-			width:100%;
-			line-height:44px;
-			border-radius:5px;
-			text-indent: $padding;
-			outline: none;
-			border:none;
-		}
-		b{
-			position:absolute;
-			top:$padding;
-			right:$padding;
-		}
-	}
-	span{
-		display: block;
-		padding:9px 20px;
-		color:$white;
-		font-size:13px;
-		a{
-			color:$white;
-			padding-left:20px;
-			font-size:13px;
-		}
-	}
-}
 
 .content{
 	ul{
@@ -50,7 +17,6 @@ body{
 			background:#fff;
 			border:1px solid #eee;
 			a{
-				display: block;
 				text-decoration: none;
 				span{
 					display: block;

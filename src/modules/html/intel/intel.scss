@@ -1,0 +1,22 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+.content{
+	ul{
+		li{
+			float:left;
+			width:118px;
+			height: 89px;
+			text-align: center;
+			border:1px solid #ccc;
+			a{
+				display: block;
+				margin-top: 25px;
+				text-decoration: none;
+				span{
+					display: block;
+				}
+			}
+		}
+	}
+}
