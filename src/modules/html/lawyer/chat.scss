@@ -1,2 +1,18 @@
 @import "variables.scss";
 @import "mixins.scss";
+
+
+.assess{
+	margin:0 $padding;
+	margin-top:50px;
+	display:block;
+	height:45px;
+	font-size:16px;
+	text-align:center;
+	line-height:45px;
+	color:$white;
+	font-size:16px;
+	background:#3d62d1;
+	text-decoration:none;
+	border-radius:5px;
+}
