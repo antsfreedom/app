@@ -4,70 +4,117 @@ body{
 	background:#f8f8f8;
 }
 
+
+.mid-single{
+  border-top:1px solid #3152c2;
+  background:$brand;
+  .search{
+    position: relative;
+    margin:24px $padding auto $padding;
+    //需调整
+    input{
+      width:100%;
+      margin-right:12px;
+      line-height:44px;
+      border-radius:5px;
+      text-indent: $padding;
+      outline: none;
+      border:none;
+    }
+    b{
+      position:absolute;
+      top:$padding;
+      right:$padding;
+    }
+  }
+  ul{
+    padding-left:23px;
+    padding-top:9px;
+    padding-bottom:13px;
+    li{
+      float: left;
+      color:$white;
+      padding-top: 9px;
+      a{
+        color:$white;
+        padding-left:20px;
+      }
+    }
+  }	
+}
+
+
+
+
 .content{
+	padding: 0 2px 30px;
 	ul{
-		margin-left:$padding;
-		margin-top: 19px;
+		min-width:300px;
 		li{
-			float:left;
-			margin-right: 8px;
-			margin-bottom: 21px;
-			width: 106px;
-			height: 96px;
-			background:#fff;
-			border:1px solid #eee;
+			float: left;
+			padding:0 10px;
+			width: 33.33%;
+			margin-top: 15px;
+			box-sizing: border-box;
+			text-align: center;
 			a{
-				text-decoration: none;
+				display: block;
+				padding: 10px 0;
+				background: #f8f8f8;
+				border:1px solid #ccc;
+				.bg{
+					display: inline-block;
+					width:50px;
+					height:50px;
+					line-height: 50px;
+					text-align: center;
+					border-radius: 50%;
+					background: #3fafee;
+					&.bg1{
+						background:$bg-pink;
+					}
+					
+				i{
+					color: $white;
+					font-size: 30px;
+				}
+			}
 				span{
 					display: block;
-					width:50px;
-					height: 50px;
-					border-radius:50%;
-					font-size: 28px;
-					text-align: center;
-					line-height: 50px;
-					color:#fff;
-					margin:9px 27px auto 27px;
-				}
-				span.bg1{
-					background:$bg-blue;
-				}
-				span.bg2{
-					background:$bg-pink;
-				}
-				span.bg3{
-					background:$bg-yellow;
-				}
-				span.bg4{
-					background:$bg-green;
-				}
-				span.bg5{
-					background:$light-blue;
-				}
-
-				span.bg6{
-					background:$bg-orange;
-				}
-				span.bg7{
-					background:$bg-purple;
-				}
-				span.bg8{
-					background:$light-orange;
-				}
-				span.bg9{
-					background:$light-green;
-				}
-				span.bg10{
-					background:$bg-yellow;
-				}
-				
-				b{
-					display: block;
-					text-align: center;
-					padding-top:10px;
-					font-size: 14px;
+					margin-top: 9px;
 				}
 			}
 		}
 	}
 }
+				// span.bg1{
+				// 	background:$bg-blue;
+				// }
+				// span.bg2{
+				// 	background:$bg-pink;
+				// }
+				// span.bg3{
+				// 	background:$bg-yellow;
+				// }
+				// span.bg4{
+				// 	background:$bg-green;
+				// }
+				// span.bg5{
+				// 	background:$light-blue;
+				// }
+
+				// span.bg6{
+				// 	background:$bg-orange;
+				// }
+				// span.bg7{
+				// 	background:$bg-purple;
+				// }
+				// span.bg8{
+				// 	background:$light-orange;
+				// }
+				// span.bg9{
+				// 	background:$light-green;
+				// }
+				// span.bg10{
+				// 	background:$bg-yellow;
+				// }
