@@ -4,6 +4,26 @@
 @import "mixins";
 
 
+@media (-webkit-min-device-pixel-ratio: 2),(min-device-pixel-ratio: 2){
+  li{
+    &:after{
+      // background:red!important;
+      transform: scaleY(0.7)
+    }
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3){
+  li{
+    &:after{
+      // background:orange!important;
+      transform: scaleY(0.5)
+    }
+  }
+}
+
+
+
 ul{
 	margin: 0;
 	padding: 0;
@@ -12,9 +32,6 @@ ul{
 	}
 }
 
-a{
-	// text-decoration: none;
-}
 
 .clearfix {
   &:before,
@@ -66,7 +83,7 @@ textarea {
 
 a {
   color: $link-color;
-  // text-decoration: none;
+  text-decoration: none;
 
   &:hover,
   &:focus {
@@ -117,47 +134,41 @@ a {
 
 .mid{
   border-top:1px solid #3152c2;
-  height:103px;
   background:$brand;
+  height:103px;
   .search{
     position: relative;
     margin:24px $padding auto $padding;
-    input{
-      width:100%;
-      line-height:44px;
-      border-radius:5px;
-      text-indent: $padding;
-      outline: none;
-      border:none;
-    }
-    b{
+    //需调整
+      input{
+        width:100%;
+        border-radius:5px;
+        text-indent: $padding;
+        outline: none;
+        border:none;
+        box-sizing: border-box;
+        padding: 15px 60px 15px 12px;
+      } 
+    i{
       position:absolute;
       top:$padding;
       right:$padding;
     }
   }
-  span{
-    display: block;
-    padding:9px 20px;
-    color:$white;
-    font-size:13px;
-    a{
-      color:$white;
-      padding-left:20px;
-      font-size:13px;
-    }
-  }
 }
 
+
+
+//共用底部
 .footer{
-    border-bottom:1px solid #ccc;
+    border-top:1px solid #ccc;
   ul{
     margin-left:30px;
-    margin-top:17px;
+    margin-top:15px;
     li{
       float:left;
+      width:25%;
       font-size: 22px;
-      margin:17px 60px 19px auto;
     }
   }
 }

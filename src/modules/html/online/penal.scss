@@ -1,5 +1,5 @@
-@import "../../css/variables.scss";
-@import "../../css/mixins.scss";
+@import "variables.scss";
+@import "mixins.scss";
 
 div.bg{
 	width:51px;
@@ -17,29 +17,22 @@ h3{
 	margin:17px auto
 }
 .penal{
-	text-indent:50px;
-	padding:0 23px 20px 20px
+	text-indent:2em;
+	padding:0 23px 20px 20px;
+	@include ellipses(4);
 }
 
-.num{
-	float:left;
-	width:50%;
-	height: 40px;
-	text-align:center;
-	line-height:40px;	
-	border:1px solid #eee;
-	span{
-		color:#e53f1f
-	}
-}
-
-.hour{
-	height: 40px;
-	text-align:center;
-	line-height:40px;	
-	border:1px solid #eee;
-	span{
-		color:#e53f1f
+.status{
+	display:table;
+	width:100%;
+	.num,.hour{
+		display: table-cell;
+		line-height:40px;
+		border:1px solid #eee;
+		text-align: center;
+		span{
+			color:#e53f1f;
+		}
 	}
 }
 
@@ -64,43 +57,36 @@ h3{
 		text-decoration: none;
 	}
 }
-
-.lawer-team{
-	a{
-		display: block;
-		text-decoration: none;
-		margin:15px $padding auto $padding;
-		padding-bottom:16px;
-		border-bottom:1px solid #eee;
-		.pic{
-			float:left;
-			margin-right:20px;
-			width:60px;
-			height: 60px;
-			background:red;
-			img{
-				width:100%;
-			}
-		}
-		.mess{
-			span{
-				display: block;
-			}
+li{
+	display:flex;
+	margin:15px $padding auto $padding;
+	padding-bottom:16px;
+	border-bottom:1px solid #eee;
+	.pic{
+		flex:0 0 60px;
+		margin-right:20px;
+		img{
+			width:100%;
 		}
 	}
-	a:nth-child(3){
-		padding-bottom:0;
-		border:none;
+	.mess{
+		flex:1;
+		span{
+			display: block;
+		}
 	}
-	.wait{
-		div{
-			height:46px;
-			line-height: 46px;
-			text-align: center;
-			border-radius:5px;
-			font-size: 16px;
-			color:$white;
-			background:$brand
-		}		
+	&:last-child{
+		border-bottom:none;
 	}
 }
+.wait{
+	display: block;
+	width:100%;
+	margin-bottom:10px;
+	line-height:46px;
+	text-align: center;
+	border-radius:5px;
+	font-size: 16px;
+	color:$white;
+	background:$brand;
+}		 

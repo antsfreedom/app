@@ -1,68 +1,59 @@
 @import "variables.scss";
 @import "mixins.scss";
-
 .content{
 	ul{
 		margin-bottom: 20px;
 		li{
-			float:left;
-			margin:22px 17px auto 17px;
-			// margin:0 22px 12px 0;
+			float: left;
+			width: 25%;
+			margin-top: 15px;
+			text-align: center;
 			a{
-				text-decoration: none;
+				display: block;
+				.bg{
+					display: inline-block;
+					width:50px;
+					width:50px;
+					line-height: 50px;
+					text-align: center;
+					border-radius: 50%;
+					background: #3fafee;
+					i{
+						color: $white;
+						font-size: 30px;
+					}
+					&.bg1{
+						background:$bg-pink;
+					}
+					&.bg2{
+						background:$bg-yellow;
+					}
+					&.bg3{
+						background:$bg-green;
+					}
+					&.bg4{
+						background:$light-blue;
+					}
+					&.bg5{
+						background:$bg-orange;
+					}
+					&.bg6{
+						background:$bg-purple;
+					}
+					&.bg7{
+						background:$light-orange;
+					}
+					&.bg8{
+						background:$bg-yellow;
+					}
+				}
 				span{
 					display: block;
-					width:52px;
-					height: 52px;
-					line-height: 52px;
-					text-align: center;
-					color:#fff;
-					font-size: 30px;
-					border-radius:50%;
-				}
-				span.bg1{
-					background:$bg-blue;
-				}
-				span.bg2{
-					background:$bg-pink;
-				}
-				span.bg3{
-					background:$bg-yellow;
-				}
-				span.bg4{
-					background:$bg-green;
-				}
-				span.bg5{
-					background:$light-blue;
-				}
-
-				span.bg6{
-					background:$bg-orange;
-				}
-				span.bg7{
-					background:$bg-purple;
-				}
-				span.bg8{
-					background:$light-orange;
-				}
-				span.bg9{
-					background:$light-green;
-				}
-				span.bg10{
-					background:$bg-yellow;
-				}
-				
-				b{
-					display: block;
-					text-align: center;
-					padding-top:10px;
-					font-size: 14px;
 				}
 			}
 		}
 	}
 }
-
 .hot{
 	height:45px;
 	line-height:45px;
@@ -104,21 +95,21 @@
 	}
 }
 
-	.share{
-		position:fixed;
-		right:0;
-		bottom:20%;
-		width:131px;
-		height:75px;
-		border:1px solid #a5a5a5;
-		ul{
-			li{
-				height: 41px;
-				line-height: 41px;
-				padding-left:15px;
-			}
-			li:nth-child(1){
-				background:#a5a5a5;
-			}
+.share{
+	position:fixed;
+	right:0;
+	bottom:20%;
+	width:131px;
+	height:75px;
+	border:1px solid #a5a5a5;
+	ul{
+		li{
+			height: 41px;
+			line-height: 41px;
+			padding-left:15px;
+		}
+		li:nth-child(1){
+			background:#a5a5a5;
 		}
 	}
+}

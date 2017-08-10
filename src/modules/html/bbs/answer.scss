@@ -4,7 +4,7 @@
 .content{
 	.question{
 		margin:16px 19px auto 24px;
-		b{
+		i{
 			float:right;
 		}
 		.title{
@@ -61,32 +61,32 @@
 }
 
 .lawyer-online{
-	margin:24px 18px 27px 32px;
-	.pic{
-		float:left;
-		margin-right: 13px;
-		width:117px;
-		height:119px;
-		img{
-			width:100%;
-			border-radius:50%;
-		}
-	}
-	ul{
-		float:left;
-		li{
-			margin-bottom:10px;
-		}
-		li:last-child{
-			width:84px;
-			height:30px;
-			line-height: 30px;
-			text-align: center;
-			background:#eb8934;
-			a{
-			color:$white;
-			text-decoration: none;			
+	margin:24px 18px 27px 18px;
+	li{
+		display: flex;
+		.pic{
+			flex:0 0 117px;
+			width:117px;
+			height:119px;
+			margin-right: 13px;
+			img{
+				width:100%;
 			}
-		}		
+		}
+		.mess{
+			flex:1;
+			li{
+				margin-bottom:10px;
+				text-align: center;
+			}
+			li:last-child{
+				width:84px;
+				height:30px;
+				line-height: 30px;
+				text-align: center;
+				color:#fff;
+				background:#eb8934;
+			}
+		}
 	}
 }

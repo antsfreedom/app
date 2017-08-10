@@ -5,14 +5,15 @@
 	ul{
 		li{
 			float:left;
-			width:118px;
+			width:33.33%;	
 			height: 89px;
 			text-align: center;
+			margin-right: -2px;
+			box-sizing:border-box;
 			border:1px solid #ccc;
 			a{
 				display: block;
 				margin-top: 25px;
-				text-decoration: none;
 				span{
 					display: block;
 				}

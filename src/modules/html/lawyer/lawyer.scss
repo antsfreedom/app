@@ -39,17 +39,18 @@ body{
 }
 
 .content{
-	// float:right;
  	width:80%;
 	background:#fff;
 	.list-head{
 		margin:8px auto auto 10px;
+		font-size: 0;
 		li{
-			// margin-right:3px;
 			display: inline-block;
-			width: 84px;
- 			height:30px;
+ 			width:33.33%;
+ 			margin-right: -5px;
+ 			box-sizing:border-box;
  			line-height: 30px;
+ 			font-size: 16px;
 			text-align: center;
  			border:1px solid #ddd;
 		}

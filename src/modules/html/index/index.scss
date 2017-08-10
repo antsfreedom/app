@@ -1,48 +1,61 @@
 @import "variables.scss";
 @import "mixins.scss";
 
+
 .content{
-		margin:0 $padding;
-	.advisory{
-		position:relative;
-		display: block;
-		text-decoration: none;
-		margin-top: 26px;
-		padding-left:13px;
-		padding-bottom: 26px;
-		border-bottom:1px solid #ccc;
-		.icon1{
-			font-size: $font-size-icon;
-			color:$brand-yellow;
-		}
-		.icon2{
-			font-size: $font-size-icon;
-			color:$brand-green
-		}
-		.icon3{
-			font-size: $font-size-icon;
-			color:$brand-red
-		}
-		.icon4{
-			font-size: $font-size-icon;
-			color:$brand-blue
+	margin:0 $padding;
+	ul{
+		// margin-right:12px;
+		li{
+				@include border-1px(#ccc);    //border 1px
+				margin-top: 26px;
+				padding-left:13px;
+				padding-bottom: 26px;	
+			a{		
+				display: block;
+				text-decoration: none;
+				.icon1{
+					font-size: $font-size-icon;
+					color:$brand-yellow;
+				}
+				.icon2{
+					font-size: $font-size-icon;
+					color:$brand-green
+				}
+				.icon3{
+					font-size: $font-size-icon;
+					color:$brand-red
+				}
+				.icon4{
+					font-size: $font-size-icon;
+					color:$brand-blue
+				}
+
+				.service{
+					padding-left:40px;
+					p{
+						margin:0;
+						font-size: $font-size-h4;
+						font-weight: 550;
+					}
+					span{
+						font-size:$padding; 
+						@include ellipses(3)
+					}
+				}
+				b{
+					position:absolute;
+					right:0;
+					top:20px;
+				}
+			}
 		}
 
-		.service{
-			padding-left:40px;
-			p{
-				margin:0;
-				font-size: $font-size-h4;
-				font-weight: 550;
+			li:last-child{
+				&:after{
+					display:none;
+				}
 			}
-			span{
-				font-size:$padding; 
-			}
-		}
-		b{
-			position:absolute;
-			right:0;
-			top:20px;
-		}
+		
 	}
 }

@@ -9,11 +9,10 @@ body{
 	width:277px;
 	height:279px;
 	margin:20px auto;
+	overflow:hidden;
 	background:url(../../images/circle.png);
 	background-size:100%;
-	overflow:hidden;
 	.count{
-		// margin:20px auto;
 		margin-left:100px;
 		margin-top: 88px;
 		color:$white;
@@ -28,31 +27,28 @@ body{
 	}
 }
 
-.wait-time{
-	color:$white;
-	font-size:16px;
-	p{
-		float:left;
-		margin:0;
-		width:50%;
-		height: 43px;
-		line-height: 43px;
+.status{
+	display:flex;
+	width:100%;
+	.waiting,.things{
+		flex:1;
 		text-align: center;
+		span{
+			display: block;
+			line-height: 43px;
+			color:$white;
+		}
 	}
 }
 
 .wait-out{
 	display:block;
-	text-decoration: none;
+	margin:70px auto;
+	width:241px;
+	line-height: 46px;
+	font-size: 16px;
 	color:$white;
-	div{
-		margin:70px auto;
-		width:241px;
-		height:46px;
-		font-size: 16px;
-		border:1px solid $white;
-		line-height: 46px;
-		text-align:center;
-		border-radius:10px;
-	}
+	text-align:center;
+	border-radius:10px;
+	border:1px solid $white;
 }
